@@ -1,0 +1,18 @@
+class Sample{
+	int x=10;
+	final int y=20;
+	final void display()
+	{
+		System.out.print("hello");
+	}
+ 
+ public static void main(String args[])
+ {
+Sample s=new Sample();
+s.x=25;
+//s.y=50; The final field Sample.y cannot be assigned
+System.out.println(s.x);
+System.out.println(s.y);
+s.display();
+}
+ }
